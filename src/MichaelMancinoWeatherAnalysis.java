@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class MichaelMancinoWeatherAnalysis {
     public static void main(String[]args) {
         //1. Algorithm for the weather project
@@ -51,5 +52,11 @@ public class MichaelMancinoWeatherAnalysis {
             }
         }
         System.out.println(AboveAvg +" days were above average.");
+
+        System.out.println("Temperatures: " + Arrays.toString(TempList));
+        Arrays.sort(TempList);
+        System.out.println("Two coldest days: " + TempList[0] + ", " + TempList[1]);
+        System.out.println("Two hottest days: " + TempList[ArLength-1] + ", " + TempList[ArLength-2]);
+
     }
 }
