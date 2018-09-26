@@ -23,7 +23,7 @@ public class MichaelMancinoWeatherAnalysis {
         calcs(scan);
     }
     public static void calcs(Scanner scan){
-        //Creates array and fills it via user input and a for loop
+        //Creates array and fills it by asking for user input and a for loop
         int ArLength = scan.nextInt();
         int[] TempList = new int[ArLength];
         double CumSum = 0;
