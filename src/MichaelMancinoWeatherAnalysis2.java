@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class MichaelMancinoWeatherAnalysis {
+public class MichaelMancinoWeatherAnalysis2 {
     public static void main(String[]args) {
         //1. Algorithm for the weather project
         //2. Initialize a cumulative sum variable and an array
