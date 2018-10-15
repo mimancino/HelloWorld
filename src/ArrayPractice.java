@@ -2,6 +2,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class ArrayPractice {
     public static void main(String[]args){
+        int nums = 54656457;
+
+
+
         int[] noomberz = new int[5];
         //before populating array
         System.out.println(Arrays.toString(noomberz));
@@ -25,6 +29,13 @@ public class ArrayPractice {
 
         }
         System.out.println(Arrays.toString(rando));
+
+    }
+    public static void mode(int[]numlist, int noombers){
+        while(noombers>10){
+
+            
+        }
 
     }
 }

@@ -26,7 +26,7 @@ public class MichaelMancinoRandomHatV2 {
         for(int i = 0; i<teams.length/2;i++){
             //generates a random number, and if the number isn't unique, generate it again
             while(pick == -1) {
-                pick = (int)(Math.random() * (teams.length));
+                pick = (int)    (Math.random() * (teams.length));
                 pick = teams[pick];
             }
 
