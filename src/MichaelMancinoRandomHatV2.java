@@ -5,7 +5,7 @@ public class MichaelMancinoRandomHatV2 {
         start();
     }
     public static void start(){
-        //Initalizes scanner and makes sure the input is an even number
+        //Initalizes scann;er and makes sure the input is an even number
         Scanner scan = new Scanner(System.in);
         int amt = 1;
         do{
