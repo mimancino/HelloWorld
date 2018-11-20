@@ -108,7 +108,23 @@ public class MichaelMancinoPersonalityTest {
         return bpercent;
 
     }
-    public static void checkpersonality(bpercent){
+    public static void checkpersonality(int[]bpercent){
+        //checks the personality. a LOT of if statements
+        String peronality = "";
+        if(bpercent[0] > 50){
+            
+        }
+        if(bpercent[1] > 50){
+
+        }
+        if(bpercent[2]>50){
+
+        }
+        if(bpercent[3] > 50){
+
+
+        }
+
 
 
     }
