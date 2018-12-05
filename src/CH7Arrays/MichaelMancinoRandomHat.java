@@ -1,14 +1,13 @@
-import java.util.Scanner;
+package CH7Arrays;
 
-public class MichaelMancinoRandomHatV3 {
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Random;
+
+public class MichaelMancinoRandomHat {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
-        System.out.println("How many teams?(for odd numbers one team moves on automatically)");
-        int amt = scan.nextInt();
-        int[] teams = new int[amt];
-        for(int i = 0; i <teams.length;i++){
-            teams[i] = i+1;
-        }
+        int[] teams = {1,2,3,4,5,6,7,8};
         int pick = -1;
         int pick2 = -1;
         for(int i = 0; i<teams.length/2;i++){
@@ -28,14 +27,8 @@ public class MichaelMancinoRandomHatV3 {
             teams[pick2-1] = -1;
             pick = -1;
             pick2 = -1;
+
         }
-            int by = -1;
-            for(int i = 0; i <teams.length;i++){
-                if(by == -1) {
-                    by = teams[i];
-                }
-            }
-            System.out.println("Team " + by + " gets to move on automatically.");
 
 
     }

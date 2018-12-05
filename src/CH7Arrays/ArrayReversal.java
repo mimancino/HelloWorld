@@ -1,3 +1,5 @@
+package CH7Arrays;
+
 import java.util.Arrays;
 public class ArrayReversal {
     public static void main(String[]args){

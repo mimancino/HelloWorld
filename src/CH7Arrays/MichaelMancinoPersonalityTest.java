@@ -1,3 +1,5 @@
+package CH7Arrays;
+
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -112,7 +114,7 @@ public class MichaelMancinoPersonalityTest {
         //checks the personality. a LOT of if statements
         String peronality = "";
         if(bpercent[0] > 50){
-            
+
         }
         if(bpercent[1] > 50){
 

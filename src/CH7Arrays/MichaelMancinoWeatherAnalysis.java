@@ -1,6 +1,7 @@
+package CH7Arrays;
+
 import java.util.Scanner;
-import java.util.Arrays;
-public class MichaelMancinoWeatherAnalysis2 {
+public class MichaelMancinoWeatherAnalysis {
     public static void main(String[]args) {
         //1. Algorithm for the weather project
         //2. Initialize a cumulative sum variable and an array
@@ -18,12 +19,12 @@ public class MichaelMancinoWeatherAnalysis2 {
     public static void calctemp(Scanner scan){
         System.out.println("Welcome to the temperature calculator! This takes a certain amount of temperatures and calculates the average of them");
         System.out.println("It also tells you how many days had an above average temperature.");
-        System.out.println("How many days' temperatures?");
+        System.out.print("How many days' temperatures?");
 
         calcs(scan);
     }
+    //Creates array and fills it via user input and a for loop
     public static void calcs(Scanner scan){
-        //Creates array and fills it by asking for user input and a for loop
         int ArLength = scan.nextInt();
         int[] TempList = new int[ArLength];
         double CumSum = 0;
@@ -41,8 +42,8 @@ public class MichaelMancinoWeatherAnalysis2 {
         finish(CumSum,ArLength,AboveAvg,TempList);
 
     }
+    //Calculates and rounds the average
     public static void finish(double CumSum, int ArLength,int AboveAvg, int[] TempList){
-        //Calculates and rounds the average
         CumSum = CumSum/ArLength;
         CumSum =(Math.round(CumSum * 10.0)) / 10.0;;
         System.out.println("Average temp = " + CumSum);
@@ -52,11 +53,5 @@ public class MichaelMancinoWeatherAnalysis2 {
             }
         }
         System.out.println(AboveAvg +" days were above average.");
-
-        System.out.println("Temperatures: " + Arrays.toString(TempList));
-        Arrays.sort(TempList);
-        System.out.println("Two coldest days: " + TempList[0] + ", " + TempList[1]);
-        System.out.println("Two hottest days: " + TempList[ArLength-1] + ", " + TempList[ArLength-2]);
-
     }
 }

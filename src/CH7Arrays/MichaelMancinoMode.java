@@ -1,3 +1,5 @@
+package CH7Arrays;
+
 import java.util.Scanner;
 
 public class MichaelMancinoMode {
