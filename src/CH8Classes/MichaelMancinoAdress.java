@@ -71,4 +71,7 @@ public class MichaelMancinoAdress {
     public void setZipcode(int zipcode) {
         this.zipcode = zipcode;
     }
+    public String toString(){
+        return housenum + " " + aptnum + " " + street + " " + city + " " + state + " " + zipcode;
+    }
 }

@@ -22,4 +22,7 @@ public class MichaelMancinoDateOfBirth {
     public int getYear() {
         return year;
     }
-}
+    public String toString(){
+        return month + " " + day + " " + year;
+
+    }}
