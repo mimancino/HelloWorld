@@ -1,14 +1,14 @@
 package CH8Classes;
 
-public class MichaelMancinoBankAccount {
+public class MichaelMancinoBankAccountV2 {
     private double balance;
     private int pin;
     private String name;
     private String socialSecurityNumber;
-    private String adress;
-    private String dateofbirth;
+    private MichaelMancinoAdress adress;
+    private MichaelMancinoDateOfBirth dateofbirth;
     //real constructor hours
-    public MichaelMancinoBankAccount(String name,String socialSecurityNumber, String adress,String dateofbirth){
+    public MichaelMancinoBankAccountV2(String name, String socialSecurityNumber, MichaelMancinoAdress adress, MichaelMancinoDateOfBirth dateofbirth){
         this.name = name;
         this.socialSecurityNumber = socialSecurityNumber;
         this.adress = adress;
@@ -16,7 +16,7 @@ public class MichaelMancinoBankAccount {
 
     }
 
-    public MichaelMancinoBankAccount(double balance, String name,String socialSecurityNumber, String adress,String dateofbirth,int pin){
+    public MichaelMancinoBankAccountV2(double balance, String name, String socialSecurityNumber, MichaelMancinoAdress adress, MichaelMancinoDateOfBirth dateofbirth, int pin){
         this.name = name;
         this.socialSecurityNumber = socialSecurityNumber;
         this.adress = adress;
@@ -41,10 +41,10 @@ public class MichaelMancinoBankAccount {
     public String getSocialSecurityNumber(){
         return socialSecurityNumber;
     }
-    public String getAdress(){
+    public MichaelMancinoAdress getAdress(){
         return adress;
     }
-    public String getDateofbirth(){
+    public MichaelMancinoDateOfBirth getDateofbirth(){
         return dateofbirth;
     }
     //real setter hours
