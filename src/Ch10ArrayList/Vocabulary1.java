@@ -44,7 +44,7 @@ public static void main(String[]args)throws FileNotFoundException {
         int i1 = 0;
         int i2 = 0;
         ArrayList<String> matches = new ArrayList<String>();
-        while(i1 < l1.size()){
+        while((i1 < l1.size()) && (i2 < l2.size())){
             if(l1.get(i1).equals(l2.get(i2))){
                 i1++;
                 i2++;
