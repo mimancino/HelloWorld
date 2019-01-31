@@ -40,15 +40,15 @@ public static void main(String[]args)throws FileNotFoundException {
 
                     return uniqueWords;
         }
-        public static double overlap(ArrayList<String> l1, ArrayList<String> l2){
+        public static ArrayList<String> overlap(ArrayList<String> l1, ArrayList<String> l2){
         int i1 = 0;
         int i2 = 0;
-        double matches = 0;
+        ArrayList<String> matches = new ArrayList<String>();
         while(i1 < l1.size()){
             if(l1.get(i1).equals(l2.get(i2))){
                 i1++;
                 i2++;
-                matches++;
+                matches.add(l1.get(i1));
 
             }
             else if(l1.get(i1) < (l2.get(i2)){
@@ -58,6 +58,7 @@ public static void main(String[]args)throws FileNotFoundException {
                 i2++;
 
             }        }
+            return matches;
 
         }
 }
