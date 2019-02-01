@@ -1,7 +1,9 @@
+
 package Ch10ArrayList;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -13,8 +15,11 @@ public static void main(String[]args)throws FileNotFoundException {
         ArrayList<String> list = getWords(scan1);
         ArrayList<String> list2 = getWords(scan2);
         System.out.println(list);
-    System.out.println(list2);
-
+        System.out.println(list2);
+        ArrayList<String> matches = overlap(list ,list2);
+        double list1p = percentOverlap(list,matches);
+        double list2p = percentOverlap(list2,matches);
+        System.out.println(list1p);
 
         }
         //This method reads the data of an external file and converts it to lowercase and applies casefolding and removes any duplicate words
@@ -46,19 +51,30 @@ public static void main(String[]args)throws FileNotFoundException {
         ArrayList<String> matches = new ArrayList<String>();
         while((i1 < l1.size()) && (i2 < l2.size())){
             if(l1.get(i1).equals(l2.get(i2))){
+                matches.add(l1.get(i1));
                 i1++;
                 i2++;
-                matches.add(l1.get(i1));
+
 
             }
-            else if(l1.get(i1) < (l2.get(i2)){
+            else if(l1.get(i1).compareTo(l2.get(i2) ) <0){
                 i1++;
             }
             else{
                 i2++;
 
             }        }
+            System.out.println(matches);
             return matches;
 
         }
-}
+        public static double percentOverlap(ArrayList<String> other, ArrayList<String> matches) {
+            double percent = 0;
+
+
+
+
+            return ((double)matches.size()/other.size()) *100;
+        }
+
+        }
