@@ -1,4 +1,4 @@
-package Ch9Inheritance;
+/*package Ch9Inheritance;
 
 public class Cash implements Asset{
     double amount;
@@ -16,4 +16,4 @@ public class Cash implements Asset{
         return 0;
     }
     public void
-}
+}*/

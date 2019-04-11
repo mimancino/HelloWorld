@@ -1,4 +1,4 @@
-package Ch9Inheritance;
+/*package Ch9Inheritance;
 
 public class Cylinder extends Prism {
 
@@ -22,3 +22,4 @@ public class Cylinder extends Prism {
         return radius;
     }
 }
+*/
